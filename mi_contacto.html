@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    
+    <form action="https://formsubmit.co/devalynx.desarrollo@gmail.com" method="POST">
+        <h2>¡ENVÍAME TU OPINION!</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label><br>
+            <input type="text" name="name" id="name" placeholder="Nombre"><br>
+            <label for="phone">Teléfono</label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Teléfono"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Email"><br>
+            <label for="rate">Puntuación</label><br>
+            <input type="radio" name="rate" id="rate" value="1">1
+            <input type="radio" name="rate" id="rate" value="2">2
+            <input type="radio" name="rate" id="rate" value="3">3
+            <input type="radio" name="rate" id="rate" value="4">4
+            <input type="radio" name="rate" id="rate" value="5">5<br>
+            <label for="commentary">Comentario</label><br>
+            <textarea name="commentary" id="commentary" cols="30" rows="5" placeholder="¡Escribe tu comentario aquí!"></textarea><br>
+            <div class="form-txt">Política de Privacidad<br>
+                <a href="#">Politica de privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+            <br><input class="btn" type="submit" value="¡Envíame!">
+            <br><a href="index.html">Volver a la Página Principal</a><br>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/mi_contacto.html">
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+    </form>
+</body>
+</html>
